@@ -7,7 +7,7 @@
 body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-  min-height: 4000px;
+  min-height: 8000px;
 }
 
 .hero::before {
@@ -175,6 +175,35 @@ body {
   border-top: 1px solid #999;
   font-weight: 300;
   font-size: 0.9rem;
+}
+
+.gallery {
+  color: white;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  margin: 10px auto;
+}
+.gallery_list {
+  flex: 1;
+  width: 80%;
+  object-fit: cover;
+  margin: 10px auto 50px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+  display: grid;
+  grid-row: inherit;
+  padding: 30px;
+  gap: 50px;
+}
+.gallery_list img {
+  width: 100%;
+  cursor: pointer;
+}
+.gallery h1 {
+  color: var(--green);
+  font-family: "Dancing Script";
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* laptop media query */
