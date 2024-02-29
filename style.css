@@ -7,7 +7,7 @@
 body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-  min-height: 8000px;
+  min-height: 5000px;
 }
 
 .hero::before {
@@ -181,29 +181,70 @@ body {
   color: white;
   padding-top: 10rem;
   padding-bottom: 8rem;
-  margin: 10px auto;
 }
-.gallery_list {
-  flex: 1;
-  width: 80%;
-  object-fit: cover;
-  margin: 10px auto 50px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-  display: grid;
-  grid-row: inherit;
-  padding: 30px;
-  gap: 50px;
+
+.gifts span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
 }
-.gallery_list img {
-  width: 100%;
-  cursor: pointer;
-}
-.gallery h1 {
+
+.gallery h2,
+.gifts h2 {
   color: var(--green);
   font-family: "Dancing Script";
   font-size: 5rem;
   font-weight: bold;
   text-align: center;
+}
+.gallery p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: black;
+  font-family: "Voltaire", sans-serif;
+}
+
+.gifts {
+  background-color: #edf5d7;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+footer {
+  padding: 3rem;
+  background-color: #9daf44;
+  font-weight: bold;
+}
+
+.audio-icon{
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.4rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating{
+  from{
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
 }
 
 /* laptop media query */
